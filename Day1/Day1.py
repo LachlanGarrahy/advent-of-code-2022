@@ -12,7 +12,6 @@ def GetCalories():
                 currentCalories += int(i)
         return(calories)
         
-
 def SortList(calories):
     calories.sort(reverse=True)
     return calories
@@ -20,10 +19,11 @@ def SortList(calories):
 def addTopThree(calories):
     return calories[0] + calories[1] + calories[2]
 
-
+def printCounts(calories, top3):
+    print(max(calories))
+    print(top3)
 
 calories = GetCalories()
 sortedCalories = SortList(calories)
 totalTop3 = addTopThree(sortedCalories)
-print(totalTop3)
-
+printCounts(calories, totalTop3)
