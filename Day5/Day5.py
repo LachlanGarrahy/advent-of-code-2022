@@ -19,7 +19,7 @@ def splitData(data):
     character = 0
     for line in data:
         character = 0
-        if(line[0] == " "):
+        if(line[1] == "1"):
             return grid
         while(character<36):
             if(line[character+1] == " "):
